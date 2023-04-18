@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="337.0" prefWidth="497.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jobtopia.GUI.ClientModificationCandidatureFXMLController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="543.0" styleClass="Form_container">
+         <children>
+            <ImageView fitHeight="299.0" fitWidth="313.0" layoutX="103.0" layoutY="82.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/sketchy-1/4-dark.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="89.0" layoutY="122.0" text="Etat de candidature" />
+            <Label layoutX="89.0" layoutY="155.0" text="Offre" />
+            <Label layoutX="89.0" layoutY="189.0" text="Nom du Freelancer" />
+            <TextField id="offID" fx:id="upOff" depthTest="DISABLE" editable="false" layoutX="246.0" layoutY="151.0" styleClass="TextField" />
+            <TextField id="freeID" fx:id="upFree" depthTest="DISABLE" editable="false" layoutX="246.0" layoutY="185.0" styleClass="TextField" />
+            <Button id="add" fx:id="enregistrer" layoutX="193.0" layoutY="251.0" mnemonicParsing="false" onAction="#validerButton" prefHeight="34.0" prefWidth="117.0" styleClass="Button" text="Mettre à jours" />
+            <ComboBox fx:id="etatChoice" layoutX="246.0" layoutY="118.0" prefWidth="150.0">
+               <styleClass>
+                  <String fx:value="check-box" />
+                  <String fx:value="CheckBox_Container" />
+               </styleClass>
+            </ComboBox>
+            <ImageView fitHeight="96.0" fitWidth="202.0" layoutX="162.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/Topiav1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="393.0" prefWidth="545.0" styleClass="Form_container" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jobtopia.GUI.ModificationCandidatureFXMLController">
+  <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="715.0">
+         <children>
+            <ImageView fitHeight="351.0" fitWidth="471.0" layoutX="50.0" layoutY="38.0" opacity="0.62">
+               <image>
+                  <Image url="@Assets/sketchy-1/4-dark.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="115.0" text="Etat de candidature" />
+            <Label layoutX="100.0" layoutY="148.0" text="Offre" />
+            <Label layoutX="100.0" layoutY="182.0" text="Nom du Freelancer" />
+            <TextField id="offID" fx:id="upOff" depthTest="DISABLE" editable="false" layoutX="257.0" layoutY="144.0" promptText="Offre" styleClass="TextField" />
+            <TextField id="freeID" fx:id="upFree" layoutX="257.0" layoutY="178.0" promptText="Nom du Freelancer" styleClass="TextField" />
+            <Button id="add" fx:id="enregistrer" layoutX="204.0" layoutY="244.0" mnemonicParsing="false" onAction="#validerButton" prefHeight="34.0" prefWidth="117.0" styleClass="Button" text="Mettre à jours" />
+            <ComboBox fx:id="etatChoice" disable="true" layoutX="257.0" layoutY="111.0" prefWidth="150.0" styleClass="check-box">
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </ComboBox>
+            <Label fx:id="comboboxfd" layoutX="414.0" layoutY="115.0" text="Label" />
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>

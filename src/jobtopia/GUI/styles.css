@@ -1,0 +1,38 @@
+#Interface_container{
+    -fx-background-color: #010D1E;
+}
+
+#SignIn_container{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+
+.TextField{
+    -fx-border-color:  rgba(33, 66, 106, 0.5);
+    -fx-border-radius: 5px;
+}
+
+.Button{
+    -fx-background-color:  #2d4065;
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-cursor: Hand;
+}
+
+.CheckBox_Container{
+    -fx-border-color:  rgba(33, 66, 106, 0.5);
+    -fx-border-radius: 5px;
+    -fx-border-width: 3px;
+}
+
+.check-box > .box {
+    -fx-padding: 9px;
+    -fx-border-color:  rgba(33, 66, 106, 0.5);
+    -fx-border-radius: 5px;
+}
+
+.Form_container{
+    -fx-border-color:  rgba(33, 66, 106, 0.6);
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}
